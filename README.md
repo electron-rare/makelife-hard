@@ -25,10 +25,19 @@ python -m tools.export --project hardware/my_board
 ## Project structure
 
 ```
-hardware/   KiCad projects and design blocks
-spice/      SPICE simulations
-tools/      Export automation and MCP servers
+hardware/     KiCad projects and design blocks
+library/      Shared symbol library (makelife.kicad_sym) and 3D shapes
+blocks/       Reusable design blocks by category (power, mcu, sensing, ...)
+templates/    Complete board templates (bmu-complete, led-controller, audio-processor)
+spice/        SPICE simulations
+tools/        Export automation and MCP servers
+docs/         Catalog, design rules, and source traceability
 ```
+
+## Design blocks library
+
+22 reusable KiCad design blocks across 8 categories, extracted from 15 production projects.
+See [docs/catalog.md](docs/catalog.md) for the full inventory and [docs/design-rules.md](docs/design-rules.md) for layout guidelines.
 
 ## Related repos
 
