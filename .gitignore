@@ -65,6 +65,28 @@ coverage/
 .env.local
 .env.*.local
 
+# Secrets & credentials
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.crt
+*.cer
+*.der
+secrets/
+.secrets/
+secrets.json
+credentials.json
+service-account*.json
+id_rsa
+id_ed25519
+acme.json
+*.tfvars
+*.tfvars.json
+terraform.tfstate*
+
 # IDE generated
 .vscode/settings.json
 .cursor/
@@ -85,3 +107,10 @@ npm-debug.log*
 tmp/
 temp/
 *.tmp
+
+# Additional local caches
+.ruff_cache/
+.hypothesis/
+.tox/
+.ipynb_checkpoints/
+.pnpm-store/
